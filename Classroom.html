@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Staff Registration Page">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="_css/normalize.css">
+  <link rel="stylesheet" href="_css/styles.css">
+  <script src="_javascript/submit.js" type="text/javascript"></script>
+  <title>Classroom Details</title>
+</head>
+
+<body>
+  <h1>Classroom Details</h1>
+  <div>
+    <form id="classroomForm" name="classroomForm" action="http://localhost/Website/_php/phpClassroom.php" method="post">
+      
+      <label for="classroomID">Classroom ID</label>
+      <input type="text" name="classroomID" id="classroomID">
+      <br>
+
+      <label for="classCap">Classroom Capacity</label>
+      <input type="text" name="classCap" id="classCap" required>
+      <br>
+
+      <label for="classBuild">Classroom Building</label>
+      <input type="text" name="classBuild" id="classBuild" required>
+      <br>
+
+      <label for="classLatitude">Classroom Latitude</label>
+      <input type="text" name="classLatitude" id="classLatitude" required>
+      <br>
+
+      <label for="classLongitude">Classroom Longitude</label>
+      <input type="text" name="classLongitude" id="classLongitude" required>
+      <br>
+
+      <label for="classAltitude">Classroom Longitude</label>
+      <input type="text" name="classAltitude" id="classAltitude" required>
+      <br>
+
+      <input type="submit" value="Submit" class="button">
+      <br>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Staff Registration Page">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="_css/normalize.css">
+  <link rel="stylesheet" href="_css/styles.css">
+  <script src="_javascript/submit.js" type="text/javascript"></script>
+  <script src="_javascript/checkboxHOD.js" type="text/javascript"></script>
+  <title>Staff Registration</title>
+</head>
+
+<body>
+  <h1>Staff Registration</h1>
+  <div>
+  <form id="staffRegForm" name="staffRegForm" action="http://localhost/Website/_php/phpStaffReg.php" method="post">
+
+    <label for="staffID">Staff ID</label>
+    <input type="text" name="staffID" id="staffID" required>
+    <br>
+
+    <label for="staffPassword">Password</label>
+    <input type="password" name="staffPassword" id="staffPassword" required>
+    <br>
+
+    <label for="staffDeptID">Department ID</label>
+    <input type="text" name="staffDeptID" id="staffDeptID" required>
+    <br>
+
+    <label for="staffDesignation">Designation</label>
+    <input type="text" name="staffDesignation" id="staffDesignation" required>
+    <br>
+
+    <label for="staffHODcheck">HOD</label>
+    <input type="checkbox" name="staffHODcheck" id="staffHODcheck" value="1" required>
+    <br>
+
+    <label for="staffFName">Staff First Name</label>
+    <input type="text" name="staffFName" id="staffFName" required>
+    <br>
+
+    <label for="staffMName">Staff Middle Name</label>
+    <input type="text" name="staffMName" id="staffMName">
+    <br>
+
+    <label for="staffLName">Staff Last Name</label>
+    <input type="text" name="staffLName" id="staffLName" required>
+    <br>
+
+    <label for="staffEmailID">Staff Email ID</label>
+    <input type="email" name="staffEmailID" id="staffEmailID" required>
+    <br>
+
+    <label for="staffPhoneNumber">Staff Phone Number</label>
+    <input type="tel" name="staffPhoneNumber" id="staffPhoneNumber" required>
+    <br>
+
+    <label for="staffCountry">Country</label>
+    <input type="text" name="staffCountry" id="staffCountry" required>
+    <br>
+
+    <label for="staffState">State</label>
+    <input type="text" name="staffState" id="staffState" required>
+    <br>
+
+    <label for="staffCity">City</label>
+    <input type="text" name="staffCity" id="staffCity" required>
+    <br>
+
+    <label for="staffAddress">Address</label>
+    <input type="text" name="staffAddress" id="staffAddress" required>
+    <br>
+
+    <label for="staffPincode">Pincode</label>
+    <input type="number" name="staffPincode" id="staffPincode" required>
+    <br>
+
+    <input type="submit" value="Submit" class="button">
+    <br>
+  </form>
+</div>
+</body>
+
+</html>

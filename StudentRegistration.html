@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Student Registration Page">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="_css/normalize.css">
+  <link rel="stylesheet" href="_css/styles.css">
+  <script src="_javascript/submit.js" type="text/javascript"></script>
+  <title>Student Registration</title>
+</head>
+
+<body>
+  <div>
+    <h1>Student Registration</h1>
+    <form id="studentRegForm" name="studentRegForm" action="http://localhost/Website/_php/phpStudentReg.php" method="post">
+
+      <label for="studStudentID">Student ID/ Registration Number</label>
+      <input type="text" name="studStudentID" id="studStudentID" required>
+      <br>
+
+      <label for="studPassword">Password</label>
+      <input type="password" name="studPassword" id="studPassword" required>
+      <br>
+
+      <label for="studDeptID">Department ID</label>
+      <input type="text" name="studDeptID" id="studDeptID" required>
+      <br>
+
+      <label for="studSemID">Semester</label>
+      <input type="text" name="studSemID" id="studSemID" required>
+      <br>
+
+      <label for="studSecID">Section</label>
+      <input type="text" name="studSecID" id="studSecID" required>
+      <br>
+
+      <label for="studFName">Student First Name</label>
+      <input type="text" name="studFName" id="studFName" required>
+      <br>
+
+      <label for="studMName">Student Middle Name</label>
+      <input type="text" name="studMName" id="studMName">
+      <br>
+
+      <label for="studLName">Student Last Name</label>
+      <input type="text" name="studLName" id="studLName" required>
+      <br>
+
+      <label for="studEmailID">Student Email ID</label>
+      <input type="email" name="studEmailID" id="studEmailID" required>
+      <br>
+
+      <label for="studPhoneNumber">Student Phone Number</label>
+      <input type="tel" name="studPhoneNumber" id="studPhoneNumber" required>
+      <br>
+
+      <label for="studParentEmailID">Parent Email ID</label>
+      <input type="email" name="studParentEmailID" id="studParentEmailID" required>
+      <br>
+
+      <label for="studParentPhoneNumber">Parent Phone Number</label>
+      <input type="tel" name="studParentPhoneNumber" id="studParentPhoneNumber" required>
+      <br>
+
+      <label for="studCountry">Country</label>
+      <input type="text" name="studCountry" id="studCountry" required>
+      <br>
+
+      <label for="studState">State</label>
+      <input type="text" name="studState" id="studState" required>
+      <br>
+
+      <label for="studCity">City</label>
+      <input type="text" name="studCity" id="studCity" required>
+      <br>
+
+      <label for="studAaddress">Address</label>
+      <input type="text" name="studAaddress" id="studAaddress" required>
+      <br>
+
+      <label for="studPincode">Pincode</label>
+      <input type="number" name="studPincode" id="studPincode" required>
+      <br>
+
+      <input type="submit" value="Submit" class="button">
+      <br>
+  </div>
+  </form>
+</body>
+
+</html>

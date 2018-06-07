@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Select User Page for AMAS Website">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="_css/normalize.css">
+  <link rel="stylesheet" href="_css/styles.css">
+  <title>AMAS Select User</title>
+
+  <script src="_javascript/tabs.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+  <h1>Select User</h1>
+  <div id="tabContainer">
+    <div id="tabs">
+      <ul>
+        <li id="tab1"><a href="#tabPanel1">Student</a></li>
+        <li id="tab2"><a href="#tabPanel2">Staff</a></li>
+      </ul>
+    </div>
+    <div id="containers">
+      <div id="tabPanel1">
+        <h4>Student</h4>
+        <form id="selectUser" name="selectUser" action="http://localhost/Website/_php/test.php" method="post">
+          <label for="studentID">Student ID</label>
+          <input type="text" name="studentID" id="studentID" >
+          <br>
+
+          <label for="emailIDStud">Email ID</label>
+          <input type="email" name="emailIDStud" id="emailIDStud" >
+          <input type="submit" value="Generate Code" class="button generate" name="generatecode" id="generatecode">
+          <label for="emailIDVerificationStud">Verification Code</label>
+          <input type="number" name="emailIDVerificationStud" id="emailIDVerificationStud" >
+          <input type="button" value="Verify" class="button" name="verifycode" id="verifycode">
+          <br>
+
+          <label for="phoneNumberStud">Phone Number</label>
+          <input type="tel" name="phoneNumberStud" id="phoneNumberStud"  >
+          <input type="button" value="Generate OTP" class="button generate">
+          <label for="phoneVerificationStud">OTP</label>
+          <input type="number" name="phoneVerificationStud" id="phoneVerificationStud" >
+          <input type="button" value="Verify" class="button">
+          <br>
+
+          <input type="submit" value="Submit" class="button">
+        </form>
+
+      </div>
+      <div id="tabPanel2">
+        <h4>Staff</h4>
+        <form>
+          <label for="staffID" class="spacing">Staff ID</label>
+          <input type="text" name="staffID" id="staffID" required>
+          <br>
+
+          <label for="emailIDStaff">Email ID</label>
+          <input type="email" name="emailIDStaff" id="emailIDStaff" required>
+          <input type="button" value="Generate Code" class="button generate">
+          <label for="emailIDVerificationStaff">Verification Code</label>
+          <input type="number" name="emailIDVerificationStaff" id="emailIDVerificationStaff" required>
+          <input type="button" value="Verify" class="button">
+          <br>
+
+          <label for="phoneNumberStaff" class="spacing">Phone Number</label>
+          <input type="tel" name="phoneNumberStaff" id="phoneNumberStaff" required>
+          <input type="button" value="Generate OTP" class="button generate">
+          <label for="phoneVerificationStaff">OTP</label>
+          <input type="number" name="phoneVerificationStaff" id="phoneVerificationStaff" required>
+          <input type="button" value="Verify" class="button">
+          <br>
+
+          <input type="submit" value="Submit" class="button">
+        </form>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
